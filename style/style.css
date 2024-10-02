@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --orange:#F38563;
+    --ochqora:#3D3D3F;
+}
+.container{
+    width: 90%;
+    height: 3000px;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    background-color: #F6F6FB;
+}
+.container nav{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container nav div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: rubik;
+}
+.container nav div h1{
+    font-weight: 400;
+}
+.container nav ul{
+    list-style: none;
+    font-family: rubik;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    transition: .3s;
+}
+.container nav ul :hover{
+    color: var(--orange);
+    transition: .3s;
+}
+.container nav button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px 5px;
+    background-color: var(--orange);
+    color: white;
+    font-family: rubik;
+    font-weight: bold;
+}
+header{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+header div{
+    width: 49%;
+    height: 100%;
+    /* border: 2px solid orange; */
+    position: relative;
+}
+header .info pre{
+    position: absolute;
+    font-family: rubik;
+    font-weight: 450;
+    font-size: 70px;
+    color: var(--ochqora);
+}
+header .info p{
+    font-family: rubik;
+    font-size: 20px;
+    position: absolute;
+    top: 200px;
+}
+header .info button{
+    border: none;
+    background-color: var(--orange);
+    width: 200px;
+    height: 45px;
+    font-family: rubik;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    top: 300px;
+    border-radius: 5px 5px;
+}
+header .img img{
+    position: absolute;
+    width: 650px;
+}
+h1{
+    font-family: rubik;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 550
+}
+.container .static{
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid orange; */
+    display: flex;
+}
+.container .static div{
+    width: 33.3%;
+    height: 100%;
+    border: 1px solid gray;
+    position: relative;
+}
+.container .static .project img{
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+.container .static .project h1{
+    position: absolute;
+    font-family: rubik;
+    top: 100px;
+    left: 41%;
+}
+.container .static .project p{
+    position: absolute;
+    font-family: rubik;
+    font-size: 25px;
+    color: var(--ochqora);
+    top: 200px;
+    left: 28%;
+}
+.container .static .active img{
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+.container .static .active h1{
+    position: absolute;
+    font-family: rubik;
+    top: 100px;
+    left: 43%;
+}
+.container .static .active p{
+    position: absolute;
+    font-family: rubik;
+    font-size: 25px;
+    color: var(--ochqora);
+    top: 200px;
+    left: 34%;
+}
+.container .static .happy img{
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+.container .static .happy h1{
+    position: absolute;
+    font-family: rubik;
+    top: 100px;
+    left: 41%;
+}
+.container .static .happy p{
+    position: absolute;
+    font-family: rubik;
+    font-size: 25px;
+    color: var(--ochqora);
+    top: 200px;
+    left: 34%;
+}
+.information{
+    margin-top: 100px;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.information div{
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid gray; */
+    position: relative;
+    border-radius: 20px 20px;
+    background-color: white;
+    transition: 1s;
+}
+.information div:hover button{
+    background-color: var(--orange);
+    transition: 1s;
+}
+.information div:hover .radius{
+    background-color: var(--orange);
+    transition: 1s;
+}
+.information button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    bottom: 20px;
+    left: 0;
+    left: 43%;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .information button:hover{
+    background-color: var(--orange);
+    transition: .5s;
+} */
+.information h1{
+    position: absolute;
+    top: 0;
+    top: 10px;
+    left: 70px;
+}
+.information pre{
+    position: absolute;
+    font-family: rubik;
+    font-size: 20px;
+    text-align: center;
+    left: 30px;
+    top: 0;
+    top: 120px;
+}
+.information .radius{
+    position: absolute;
+    top: -50px;
+    left: 41%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 10px gray;
+}
